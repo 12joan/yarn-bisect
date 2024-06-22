@@ -1,0 +1,34 @@
+{
+  "name": "yarn-bisect",
+  "version": "1.0.0",
+  "description": "Bisect an NPM package to locate the version where an error first occurred",
+  "repository": "https://github.com/12joan/yarn-bisect",
+  "author": "Joe Anderson",
+  "license": "MIT",
+  "bin": {
+    "yarn-bisect": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "typecheck": "tsc --incremental --noEmit",
+    "typecheck:watch": "yarn typecheck --watch",
+    "lint": "eslint src --max-warnings 0",
+    "ci": "yarn typecheck && yarn lint"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "regex-escape": "^3.4.10",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8"
+  }
+}
