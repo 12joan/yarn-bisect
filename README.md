@@ -18,7 +18,7 @@ For usage instructions, see `yarn-bisect help`.
 
 ## Example
 
-In the following example, we use `yarn-bisect` to locate the first version `typescript` that fails to build our project.
+In the following example, we use `yarn-bisect` to locate the first version of `typescript` that fails to build our project.
 
 ```bash
 $ yarn-bisect start typescript --no-filter-versions # Include dev versions
